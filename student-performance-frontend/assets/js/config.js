@@ -1,5 +1,5 @@
 /* Central API config. Set USE_MOCK=true to run the frontend alone with sample data. */
-const API={USE_MOCK:false,BASE_URL:'http://'+(location.hostname||'localhost')+':5001/api',
+const API={USE_MOCK:false,BASE_URL:'https://student-performnace-prediction.onrender.com/api',
  endpoints:{login:'/auth/login',register:'/auth/register',predict:'/predict',history:'/predictions',students:'/students',users:'/users'}};
 /* One request pattern for every backend call: adds the login token, turns failures into readable Errors. */
 async function apiRequest(path,{method='GET',body}={}){
